@@ -3,11 +3,7 @@ public class IfElse {
         int speed = 50;
         if(speed < 30){
             System.out.println("increase speed");
-        }
-        if(speed == 50){
-            System.out.println("good speed");
-        }
-        if(speed > 60){
+        }else{
             System.out.println("stop the car");
         }
     }

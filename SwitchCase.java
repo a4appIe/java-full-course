@@ -1,6 +1,7 @@
 public class SwitchCase {
     public static void main(String[] args) {
         String a = "monday";
+        String res = "";
         // switch (a){
         //     case 1:
         //         System.out.println("Monday");
@@ -27,10 +28,17 @@ public class SwitchCase {
         //         System.out.println("Enter a valid number");
         // }
 
-        switch (a) {
-            case "monday" -> System.out.println("monday");
-            case "tuesday" -> System.out.println("tuesday");
-            default -> System.out.println("sunday");
-        }
+        // switch (a) {
+        //     case "monday" -> System.out.println("monday");
+        //     case "tuesday" -> System.out.println("tuesday");
+        //     default -> System.out.println("sunday");
+        // }
+
+        res = switch (a){
+            case "monday" -> "monday";
+            case "tuesday" -> "tuesday";
+            default -> "sundayy";
+        };
+        System.out.println(res);
     }
 }

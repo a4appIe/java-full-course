@@ -1,5 +1,6 @@
 public class DataTypes {
     public static void main(String[] args) {
+        // PRIMITIVE DATA TYPES IN JAVA
         byte by = 12;
         short sh = 123;
         int in = 12324;

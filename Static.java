@@ -20,7 +20,9 @@ class Game{
 
 public class Static {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         Game game = new Game();
+        @SuppressWarnings("unused")
         Game game2 = new Game();
         // game.player = "Nitin";
         // game.increaseScore();

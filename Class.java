@@ -12,6 +12,15 @@ class Calculator {
     }
 }
 
+class Obj{
+    public Obj(){
+        System.out.println("object created!");
+    }
+    void show(){
+        System.out.println("showing...");
+    }
+}
+
 class Human {
     private int age;
     private String name;
@@ -49,9 +58,11 @@ public class Class {
         // int res = calc.add(a, b, c);
         // System.out.println("Result: " + res);
 
-        Human human = new Human();
-        human.setAge(22);
-        human.setName("Nitin");
-        System.out.println(human.getName() + ": "  + human.getAge());
+        // Human human = new Human();
+        // human.setAge(22);
+        // human.setName("Nitin");
+        // System.out.println(human.getName() + ": "  + human.getAge());
+
+        new Obj().show();
     }
 }

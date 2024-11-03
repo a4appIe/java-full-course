@@ -15,6 +15,16 @@ class Calculator {
 class Human {
     private int age;
     private String name;
+
+    public Human(){
+        this.age = 0;
+        this.name = "";
+    }
+
+    public Human(int age, String name){
+        this.age = age;
+        this.name = name;
+    }
     public void setAge(int age){
         this.age = age;
     }

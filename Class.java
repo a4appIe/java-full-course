@@ -12,13 +12,36 @@ class Calculator {
     }
 }
 
+class Human {
+    private int age;
+    private String name;
+    public void setAge(int a){
+        age = a;
+    }
+    public void setName(String a){
+        name = a;
+    }
+    public int getAge(){
+        return age;
+    }
+    public String getName(){
+        return name;
+    }
+    
+}
+
 public class Class {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 9;
-        int c = 9;
-        Calculator calc = new Calculator();
-        int res = calc.add(a, b, c);
-        System.out.println("Result: " + res);
+        // int a = 5;
+        // int b = 9;
+        // int c = 9;
+        // Calculator calc = new Calculator();
+        // int res = calc.add(a, b, c);
+        // System.out.println("Result: " + res);
+
+        Human human = new Human();
+        human.setAge(22);
+        human.setName("Nitin");
+        System.out.println(human.getName() + ": "  + human.getAge());
     }
 }

@@ -13,6 +13,6 @@ public class Objects {
         Laptop laptop = new Laptop();
         laptop.model = "Apple";
         laptop.price = 1000;
-        System.out.println(laptop.toString());
+        System.out.println(laptop);
     }
 }

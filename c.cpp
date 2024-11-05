@@ -8,7 +8,7 @@ class A{
 };
 class B{
     void print(){
-        cout << "print";
+        cout << "printing";
     }
 };
 class C: public A,public B {
@@ -17,5 +17,5 @@ class C: public A,public B {
 
 int main(){
     C cl = new C();
-    
+    cl.print();
 }

@@ -4,13 +4,19 @@ interface A{
     void printName(); // methods are abstract and public in interfaces
     void printAge();
 }
+interface B {
+    void printHello();
+}
 
-class Info implements A{
+class Info implements A, B{
     public void printName(){
         System.out.println(A.name);
     }
     public void printAge(){
         System.out.println(A.age);
+    }
+    public void printHello(){
+        System.out.println("printing hello..");
     }
 }
 

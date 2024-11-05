@@ -22,7 +22,7 @@ abstract class GWagon extends Car {
     }
 }
 
-class U_GWagon extends GWagon {
+class U_GWagon extends GWagon {  // CONCRETE CLASS
     public void hie() {
         System.out.println("hie");
     }

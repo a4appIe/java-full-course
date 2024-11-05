@@ -11,12 +11,19 @@ public class Enums {
         switch (status) {
             case Running:
                 System.out.println("running..");
+                break;
             case Failed:
                 System.out.println("failed..");
+                break;
             case Pending:
                 System.out.println("pending..");
+                break;
             case Success:
                 System.out.println("success..");
+                break;
+            default:
+                System.out.println("default..");
+                break;
         }
 
         if (status == Status.Running) {

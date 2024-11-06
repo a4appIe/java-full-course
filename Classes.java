@@ -49,7 +49,7 @@ class Human {
     
 }
 
-public class Class {
+public class Classes {
     public static void main(String[] args) {
         // int a = 5;
         // int b = 9;

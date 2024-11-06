@@ -3,19 +3,20 @@ class CustomException extends Exception{
         super(str);
     }
 }
+class A {
+    public void show() throws Exception{
+        Class.forName("Hello");
+        System.out.println("showing");
+    }
+}
 
 public class TryCatch {
     public static void main(String[] args) {
-        int a = 3;
-        try {
-            int j = a / 20;
-            if (j == 0) {
-                throw new CustomException("Sorry");
-            }
-        } catch (ArithmeticException e) {
-            System.out.println(e);
-        } catch (Exception e) {
-            System.out.println(e);
+        A obj = new A();
+        try{
+            obj.show();
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 }

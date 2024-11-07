@@ -1,34 +1,28 @@
-class A implements Runnable {
-    public void run() {
-        for (int i = 0; i < 100; i++) {
-            System.out.println("hi");
-        }
+class Counter{
+    int counter;
+    public synchronized void increment(){
+        counter++;
     }
 }
-
-class B implements Runnable {
-    public void run() {
-        for (int i = 0; i < 100; i++) {
-            System.out.println("hello");
-        }
-    }
-}
-
 public class Threads {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Counter cnt = new Counter();
         Runnable a = () -> {
-            for (int i = 0; i < 100; i++) {
-                System.out.println("hi");
+            for (int i = 0; i < 10000; i++) {
+                cnt.increment();
             }
         };
         Runnable b = () -> {
-            for (int i = 0; i < 100; i++) {
-                System.out.println("hello");
+            for (int i = 0; i < 10000; i++) {
+                cnt.increment();
             }
         };
         Thread c = new Thread(a);
         Thread d = new Thread(b);
         c.start();
         d.start();
+        c.join();
+        c.join();
+        System.out.println(cnt.counter);
     }
 }

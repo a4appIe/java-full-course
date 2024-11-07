@@ -1,19 +1,20 @@
-// import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-// import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Collections {
     public static void main(String[] args) {
-        Set<Integer> nums = new HashSet<Integer>();
-        // Set<Integer> nums = new TreeSet<Integer>();
-        nums.add(5);
-        nums.add(8);
-        nums.add(6);
-        nums.add(6);
-        for (Object n : nums) {
-            System.out.println(n);
+        Map<Integer, String> students = new HashMap<>(); //keys are set and value are list
+        students.put(1, "Nitin");
+        students.put(2, "Hello");
+        students.put(3, "Bye");
+        students.put(4, "Nice");
+
+        // System.out.println(students);
+        // System.out.println(students.keySet());
+        // System.out.println(students.values());
+        for(int num: students.keySet()){
+            System.out.println(num + ": " + students.get(num));
         }
+        
     }
 }
